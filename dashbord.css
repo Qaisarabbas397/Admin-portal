@@ -8,6 +8,9 @@
 p{
     margin: 0;
 }
+.act_card img{
+    margin: 20px auto;
+}
 .brand_icon {
   max-width: 95%;
   display: flex;
@@ -109,26 +112,106 @@ form span {
     margin-top: 10px;
     font-size: 12px !important;
 }
-
-/* .card-graph h4{
-    color: #00CB2C;
-    margin-top: 5px;
+.card_footer_act{
+    display: flex;
 }
-    .card-body .card-graph img{
-        
-        border: 1 solid #333;
-        border-radius: 50px;
-        padding: 0 4px;
-    } */
-
-/* Activities page css */
-/* .card {
-  height: 20px;
-  margin-top: 40px;
+.card_footer_act .card-link{
+    font-size: 14px;
+    
 }
-.card-body {
-  background-color: #ffffff;
-} */
+.card_footer_act .edit_btn{
+    background-color: #F1F1F1;
+    color: #666666;
+}
+.card_footer_act .dlt_btn{
+    color: #FF4242;
+    background-color: #FF42421A;
+}
+.card_border_box{
+    border-radius: 3px;
+    border: 2px dashed #ee8e3b ;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-body .card-title h5{
+ font-size: 12px;
+ font-weight: 600;
+ text-align: left;
+}
+.card-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.card-title span{
+    font-size: 15px;
+    font-weight: 600;
+    color: #ee8e3b;
+    margin-bottom: 10px;
+}
+.booking_view_btn a{
+    display: block;
+    color: #949090;
+    margin-top: -22px;
+}
+.body-text{
+    margin-top: -10px;
+}
+.body-text p{
+    font-size: 13px;
+    color: #9e9999;
+}
+.body-text h6{
+    font-size: 16;
+    font-weight: 600;
+    margin-top: -10px;
+}
+.booking_dates{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+.booking p{
+    font-size: 13px;
+    color: #9e9999;
+}
+.booking h6{
+    font-size: 16;
+    font-weight: 600;
+    margin-top: -10px;
+}
+
+/* ================================== */
+/* booking details */
+.booking_list_items {
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.booking_list_items ul{
+    margin-left: -40px;
+    
+}
+.booking_list_items ul li{
+    /* border: 1px solid #333; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 1px rgba(1, 1, 1, 0.25);
+    margin-top: 3px;
+    padding-right: 8px;
+}
+.booking_list_items ul li p{
+    margin-top: 8px;
+}
+.booking_list_items ul li h6{
+    font-weight: 600;
+}
+
+/* ================================== */
 /* sub-category css */
 .sub-category {
     background-color: #fff;
@@ -168,4 +251,172 @@ form span {
 }
 .card_footer_act{
     margin-top: -30px;
+}
+
+/* ================================================= */
+/* Reviews */
+.name-review {
+    margin-top: -10px;
+}
+.name-review h5 {
+    text-align: center;
+    font-weight: 400;
+}
+.name-review h4{
+    text-align: center;
+    font-weight: 600;
+    
+    color: #EE8E3B;
+    margin-top: -8px;
+}
+.activities-1{
+    padding: 4px;
+}
+.activities-1 h5{
+    font-size: 13px;
+    color: #9CA3AF;
+    font-weight: 500;
+}
+.activities-1 p{
+    font-size: 12px;
+    font-weight: 400;
+    text-align: justify;
+
+}
+.rev_activities p{
+    font-size: 13px;
+    font-weight: 500;
+    color: #9CA3AF;
+    padding-left: 8px;
+}
+.rev_activities h6{
+    font-size: 13px;
+    font-weight: 600;
+    padding-left: 6px;
+    color: #4E4E4E;
+}
+/* ============================ */
+.activities p{
+    font-weight: 500;
+    font-family: Poppins;
+    color: #9CA3AF;
+    margin-left: 15px;
+}
+
+.activities h5{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Poppins;
+    margin-left: 15px;
+    margin-top: -14px;
+    color: #4E4E4E;
+}
+.hr-line{
+    margin: 0 auto;
+    border-bottom: 1px solid #eee;
+}
+
+/* ============================================= */
+/* coupon page  */
+
+.coupon-card-body{
+    /* margin-top: 10px; */
+    padding: 10px;
+}
+.coupon-card-body h5{
+    font-size: 15px;
+    color: #918a8a;
+}
+.coupon-card-body p{
+    font-size: 14px;
+    font-weight: 600;
+}
+.card_amount{
+    margin-top: -20px;
+}
+.coupon_border_card{
+    margin-top: 18px;
+    border-radius: 3px;
+    border: 2px dashed #ee8e3b ;
+    height: 33vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle-border {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 11px;
+    border: 2px dashed #ee8e3b ;
+    font-weight: 700;
+}
+/* ============================================ */
+/* Subsctiption */
+
+.subscription_card{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+.subscription_card p{
+    font-weight: 500;
+}
+.subscription_card h6{
+    color: #EE8E3B;
+    font-weight: 600;
+    margin-top: -10px;
+}
+/* ================================================== */
+/* blog page */
+
+.bolg-title h6{
+    font-size: 12px;
+    font-weight: 500;
+    color: #9CA3AF;
+}
+.bolg-title h5{
+    font-size: 11px;
+    font-weight: 600;
+    color: #4E4E4E;
+}
+.bolg-desc{
+    margin-top: 20px;
+}
+.bolg-desc h6{
+    font-size: 12px;
+    font-weight: 500;
+    color: #9CA3AF;
+}
+.bolg-desc p{
+    font-size: 10px;
+    font-weight: 400;
+    text-align: justify;
+}
+.blog_footer{
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+.blog_footer .edit_btn{
+    display: flex;
+    background-color: #F1F1F1;
+    color: #666666;
+    font-size: 11px;
+    
+}
+
+.blog_footer .dlt_btn{
+    display: flex;
+    color: #FF4242;
+    background-color: #FF42421A;
+    font-size: 11px;
+}
+.blog-card-border{
+    border-radius: 3px;
+    border: 2px dashed #ee8e3b ;
+    height: 57vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
