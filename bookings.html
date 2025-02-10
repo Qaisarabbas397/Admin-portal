@@ -43,36 +43,45 @@
     <div class="row">
       <!-- sidebar column -->
       <div class="col-md-3 bg-light">
-        <!-- side nav -->
+         <!-- sidebar start  -->
          <div class="side_nav">
           <div class="sidebar_item dashbord bg-light">
             <a href="dashbord.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
            </div>
-          <div class="sidebar_item dashbord bg-light">
-          </li>
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa-solid fa-chart-line"></i>
-              Activities
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Category</a></li>
-              <li><a class="dropdown-item" href="#">Sub Category</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Activities</a></li>
-            </ul>
-          </li>
 
+           <!-- activity dropdown -->
+           <div class="sidebar_item dashbord bg-light">
+            <a  data-bs-toggle="collapse" href="#activities_items" role="button" aria-expanded="false" aria-controls="activities_items">
+              <i class="fa-solid fa-chart-line"></i> Activities
+            </a>
+       </div>
+       <div>
+        <div class="collapse" id="activities_items">
+          <div class="sidebar_item dashbord bg-light">
+            <a href="Activities.html"> - Category</a>
+           </div>
+          <div class="sidebar_item dashbord bg-light">
+            <a href="sub category.html">- Sub Categories </a>
+           </div>
+           <div class="sidebar_item dashbord bg-light">
+              <a href="Activities.html">- Activity</a>
+             </div>
+           
+           
         </div>
+       </div>
+
+
         <!-- ------------menu----------------- -->
         <div class="sidebar_item dashbord bg-light">
               <a  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Setting
+                <i class="fa fa-cog" aria-hidden="true"></i>Setting
               </a>
          </div>
          <div>
           <div class="collapse" id="collapseExample">
             <div class="sidebar_item dashbord bg-light">
-              <a href="menus.html"><i class="fa-solid fa-blog"></i>| Menus</a>
+              <a href="menus.html">- Menus</a>
              </div>
             <div class="sidebar_item dashbord bg-light">
               <a href="Contact-Us-Details.html">- Contact US </a>
@@ -81,25 +90,25 @@
                 <a href="Find-Us-Details.html">- Find Us</a>
                </div>
             <div class="sidebar_item dashbord bg-light">
-              <a href=""> Guidelines Ima..</a>
+              <a href="Guaidline.html"> Guidelines Ima..</a>
              </div>
              <div class="sidebar_item dashbord bg-light">
-              <a href="terms&condition.html"> Terms & condition</a>
+              <a href="terms&condition.html"> -Terms & condition</a>
              </div>
              <div class="sidebar_item dashbord bg-light">
-              <a href="Privacy Image.html"> privc image</a>
+              <a href="Privacy Image.html"> -privc image</a>
              </div>
             <div class="sidebar_item dashbord bg-light">
-              <a href="home-image.html">Home Image</a>
+              <a href="home-image.html">-Home Image</a>
              </div>
              <div class="sidebar_item dashbord bg-light">
-              <a href="About-Us-Imag.html">About-Us Imag..</a>
+              <a href="About-Us-Imag.html">-About-Us Imag..</a>
              </div>
              <div class="sidebar_item dashbord bg-light">
-              <a href="blog-page-img.html"> Blog Page Image</a>
+              <a href="blog-page-img.html"> -Blog Page Image</a>
              </div>
              <div class="sidebar_item dashbord bg-light">
-              <a href="Meta-Content.html">Meta content</a>
+              <a href="Meta-Content.html">-Meta content</a>
              </div>
              
           </div>
@@ -125,6 +134,8 @@
          </div>
          <!-- Sidebar completed -->
          </div>
+         <!-- sidevar end -->
+          
         </div>
 
       <!-- Main body -->
@@ -158,9 +169,10 @@
                       </div>
                     </div>
                     
-                    <div class="card-body booking_view_btn col-md-12  text-center">
-                      <a href="#" class="btn-light card-link" data-bs-toggle="modal" data-bs-target="#editModal"><i class="fa-solid fa-eye p-0"></i>  View</a>
+                    <div class="card-body blog_footer d-flex justify-content-center mb-1" >
+                      <a class="bolg-view-btn card-link edit_btn btn" data-bs-toggle="modal" data-bs-target="#editModal"><i class="fa-solid fa-eye" ></i> View</a>
                     </div>
+                    
                     <div class="active">Pending</div>
                   </div>
             </div>
@@ -191,216 +203,211 @@
                         </div>
                       </div>
                     </div>
-                    
-                    <div class="card-body booking_view_btn col-md-12  text-center">
-                      <a href="#" class="btn-light card-link"><i class="fa-solid fa-eye p-0"></i>  View</a>
+                    <div class="card-body blog_footer d-flex justify-content-center mb-1" >
+                      <a class="bolg-view-btn card-link edit_btn btn" ><i class="fa-solid fa-eye" ></i> View</a>
                     </div>
                     <div class="active">Completed</div>
                   </div>
             </div>
             <!-- card-3 -->
             <div class="col-md-3">
-                <div class="card act_card" >
-                    <img src="images/image 1144.png" class="card-img-top" alt="...">
+              <div class="card act_card" >
+                  <img src="images/image 1133.png" class="card-img-top" alt="...">
 
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h5 >Abu Dhabi City Tour</h5> <span >AED 100</span>
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5 >Abu Dhabi City Tour</h5> <span >AED 100</span>
+                    </div>
+
+                    <div class="body-text">
+                      <p>Name by Booker</p> 
+                      <h6>Shehbaz khan</h6>
+                    </div>
+
+                    <div class="booking_dates">
+                      <div class="booking booking_date">
+                          <p>Booking Date</p> 
+                          <h6>04-07-2024</h6>
                       </div>
-
-                      <div class="body-text">
-                        <p>Name by Booker</p> 
-                        <h6>Shehbaz khan</h6>
-                      </div>
-
-                      <div class="booking_dates">
-                        <div class="booking booking_date">
-                            <p>Booking Date</p> 
-                            <h6>04-07-2024</h6>
-                        </div>
-                        <div class="booking tour_date">
-                            <p>Tour Date</p> 
-                            <h6>04-07-2024</h6>
-                        </div>
+                      <div class="booking tour_date">
+                          <p>Tour Date</p> 
+                          <h6>04-07-2024</h6>
                       </div>
                     </div>
-                    
-                    <div class="card-body booking_view_btn col-md-12  text-center">
-                      <a href="#" class="btn-light card-link"><i class="fa-solid fa-eye p-0"></i>  View</a>
-                    </div>
-                    <div class="active">Completed</div>
                   </div>
-            </div>
+                  <div class="card-body blog_footer d-flex justify-content-center mb-1" >
+                    <a class="bolg-view-btn card-link edit_btn btn" ><i class="fa-solid fa-eye" ></i> View</a>
+                  </div>
+                  <div class="active">Completed</div>
+                </div>
+          </div>
             <!-- card-4 -->
             <div class="col-md-3">
-                <div class="card act_card" >
-                    <img src="images/image 1155.png" class="card-img-top" alt="...">
+              <div class="card act_card" >
+                  <img src="images/image 1133.png" class="card-img-top" alt="...">
 
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h5 >Abu Dhabi City Tour</h5> <span >AED 100</span>
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5 >Abu Dhabi City Tour</h5> <span >AED 100</span>
+                    </div>
+
+                    <div class="body-text">
+                      <p>Name by Booker</p> 
+                      <h6>Shehbaz khan</h6>
+                    </div>
+
+                    <div class="booking_dates">
+                      <div class="booking booking_date">
+                          <p>Booking Date</p> 
+                          <h6>04-07-2024</h6>
                       </div>
-
-                      <div class="body-text">
-                        <p>Name by Booker</p> 
-                        <h6>Shehbaz khan</h6>
-                      </div>
-
-                      <div class="booking_dates">
-                        <div class="booking booking_date">
-                            <p>Booking Date</p> 
-                            <h6>04-07-2024</h6>
-                        </div>
-                        <div class="booking tour_date">
-                            <p>Tour Date</p> 
-                            <h6>04-07-2024</h6>
-                        </div>
+                      <div class="booking tour_date">
+                          <p>Tour Date</p> 
+                          <h6>04-07-2024</h6>
                       </div>
                     </div>
-                    
-                    <div class="card-body booking_view_btn col-md-12  text-center">
-                      <a href="#" class="btn-light card-link"><i class="fa-solid fa-eye p-0"></i>  View</a>
-                    </div>
-                    <div class="active">Completed</div>
                   </div>
-            </div>
+                  <div class="card-body blog_footer d-flex justify-content-center mb-1" >
+                    <a class="bolg-view-btn card-link edit_btn btn" ><i class="fa-solid fa-eye" ></i> View</a>
+                  </div>
+                  <div class="active">Completed</div>
+                </div>
+          </div>
 
         </div>
         <!-- Cards row 2 -->
 
-        <div class="row p-2">
-            <div class="col-md-3">
-                <div class="card act_card" >
-                    <img src="images/image (1122).png" class="card-img-top" alt="...">
+        <div class="row p-2"> 
 
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h5 >Abu Dhabi City Tour</h5> <span >AED 100</span>
-                      </div>
+          <!-- card 1 --- row 2 -->
+          <div class="col-md-3">
+            <div class="card act_card" >
+                <img src="images/image 1133.png" class="card-img-top" alt="...">
 
-                      <div class="body-text">
-                        <p>Name by Booker</p> 
-                        <h6>Shehbaz khan</h6>
-                      </div>
-
-                      <div class="booking_dates">
-                        <div class="booking booking_date">
-                            <p>Booking Date</p> 
-                            <h6>04-07-2024</h6>
-                        </div>
-                        <div class="booking tour_date">
-                            <p>Tour Date</p> 
-                            <h6>04-07-2024</h6>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div class="card-body booking_view_btn col-md-12  text-center">
-                      <a href="#" class="btn-light card-link"><i class="fa-solid fa-eye p-0"></i>  View</a>
-                    </div>
-                    <div class="active">Cancelled</div>
+                <div class="card-body">
+                  <div class="card-title">
+                    <h5 >Abu Dhabi City Tour</h5> <span >AED 100</span>
                   </div>
-            </div>
+
+                  <div class="body-text">
+                    <p>Name by Booker</p> 
+                    <h6>Shehbaz khan</h6>
+                  </div>
+
+                  <div class="booking_dates">
+                    <div class="booking booking_date">
+                        <p>Booking Date</p> 
+                        <h6>04-07-2024</h6>
+                    </div>
+                    <div class="booking tour_date">
+                        <p>Tour Date</p> 
+                        <h6>04-07-2024</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body blog_footer d-flex justify-content-center mb-1" >
+                  <a class="bolg-view-btn card-link edit_btn btn" ><i class="fa-solid fa-eye" ></i> View</a>
+                </div>
+                <div class="active">Completed</div>
+              </div>
+        </div>
 
             <!-- card-2 -->
             <div class="col-md-3">
-                <div class="card act_card" >
-                    <img src="images/image 1133.png" class="card-img-top" alt="...">
+              <div class="card act_card" >
+                  <img src="images/image 1133.png" class="card-img-top" alt="...">
 
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h5 >Abu Dhabi City Tour</h5> <span >AED 100</span>
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5 >Abu Dhabi City Tour</h5> <span >AED 100</span>
+                    </div>
+
+                    <div class="body-text">
+                      <p>Name by Booker</p> 
+                      <h6>Shehbaz khan</h6>
+                    </div>
+
+                    <div class="booking_dates">
+                      <div class="booking booking_date">
+                          <p>Booking Date</p> 
+                          <h6>04-07-2024</h6>
                       </div>
-
-                      <div class="body-text">
-                        <p>Name by Booker</p> 
-                        <h6>Shehbaz khan</h6>
-                      </div>
-
-                      <div class="booking_dates">
-                        <div class="booking booking_date">
-                            <p>Booking Date</p> 
-                            <h6>04-07-2024</h6>
-                        </div>
-                        <div class="booking tour_date">
-                            <p>Tour Date</p> 
-                            <h6>04-07-2024</h6>
-                        </div>
+                      <div class="booking tour_date">
+                          <p>Tour Date</p> 
+                          <h6>04-07-2024</h6>
                       </div>
                     </div>
-                    
-                    <div class="card-body booking_view_btn col-md-12  text-center">
-                      <a href="#" class="btn-light card-link"><i class="fa-solid fa-eye p-0"></i>  View</a>
-                    </div>
-                    <div class="active">Completed</div>
                   </div>
-            </div>
+                  <div class="card-body blog_footer d-flex justify-content-center mb-1" >
+                    <a class="bolg-view-btn card-link edit_btn btn" ><i class="fa-solid fa-eye" ></i> View</a>
+                  </div>
+                  <div class="active">Completed</div>
+                </div>
+          </div>
             <!-- card-3 -->
             <div class="col-md-3">
-                <div class="card act_card" >
-                    <img src="images/image 1144.png" class="card-img-top" alt="...">
+              <div class="card act_card" >
+                  <img src="images/image 1133.png" class="card-img-top" alt="...">
 
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h5 >Abu Dhabi City Tour</h5> <span >AED 100</span>
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5 >Abu Dhabi City Tour</h5> <span >AED 100</span>
+                    </div>
+
+                    <div class="body-text">
+                      <p>Name by Booker</p> 
+                      <h6>Shehbaz khan</h6>
+                    </div>
+
+                    <div class="booking_dates">
+                      <div class="booking booking_date">
+                          <p>Booking Date</p> 
+                          <h6>04-07-2024</h6>
                       </div>
-
-                      <div class="body-text">
-                        <p>Name by Booker</p> 
-                        <h6>Shehbaz khan</h6>
-                      </div>
-
-                      <div class="booking_dates">
-                        <div class="booking booking_date">
-                            <p>Booking Date</p> 
-                            <h6>04-07-2024</h6>
-                        </div>
-                        <div class="booking tour_date">
-                            <p>Tour Date</p> 
-                            <h6>04-07-2024</h6>
-                        </div>
+                      <div class="booking tour_date">
+                          <p>Tour Date</p> 
+                          <h6>04-07-2024</h6>
                       </div>
                     </div>
-                    
-                    <div class="card-body booking_view_btn col-md-12  text-center">
-                      <a href="#" class="btn-light card-link"><i class="fa-solid fa-eye p-0"></i>  View</a>
-                    </div>
-                    <div class="active">Completed</div>
                   </div>
-            </div>
+                  <div class="card-body blog_footer d-flex justify-content-center mb-1" >
+                    <a class="bolg-view-btn card-link edit_btn btn" ><i class="fa-solid fa-eye" ></i> View</a>
+                  </div>
+                  <div class="active">Completed</div>
+                </div>
+          </div>
             <!-- card-4 -->
             <div class="col-md-3">
-                <div class="card act_card" >
-                    <img src="images/image 1155.png" class="card-img-top" alt="...">
+              <div class="card act_card" >
+                  <img src="images/image 1133.png" class="card-img-top" alt="...">
 
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h5 >Abu Dhabi City Tour</h5> <span >AED 100</span>
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5 >Abu Dhabi City Tour</h5> <span >AED 100</span>
+                    </div>
+
+                    <div class="body-text">
+                      <p>Name by Booker</p> 
+                      <h6>Shehbaz khan</h6>
+                    </div>
+
+                    <div class="booking_dates">
+                      <div class="booking booking_date">
+                          <p>Booking Date</p> 
+                          <h6>04-07-2024</h6>
                       </div>
-
-                      <div class="body-text">
-                        <p>Name by Booker</p> 
-                        <h6>Shehbaz khan</h6>
-                      </div>
-
-                      <div class="booking_dates">
-                        <div class="booking booking_date">
-                            <p>Booking Date</p> 
-                            <h6>04-07-2024</h6>
-                        </div>
-                        <div class="booking tour_date">
-                            <p>Tour Date</p> 
-                            <h6>04-07-2024</h6>
-                        </div>
+                      <div class="booking tour_date">
+                          <p>Tour Date</p> 
+                          <h6>04-07-2024</h6>
                       </div>
                     </div>
-                    
-                    <div class="card-body booking_view_btn col-md-12  text-center">
-                      <a href="#" class="btn-light card-link"><i class="fa-solid fa-eye p-0"></i>  View</a>
-                    </div>
-                    <div class="active"> Completed</div>
                   </div>
-            </div>
+                  <div class="card-body blog_footer d-flex justify-content-center mb-1" >
+                    <a class="bolg-view-btn card-link edit_btn btn" ><i class="fa-solid fa-eye" ></i> View</a>
+                  </div>
+                  <div class="active">Completed</div>
+                </div>
+          </div>
         </div>
     </div>
     </div>
@@ -411,6 +418,7 @@
   <div class="modal fade custom-modal" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
     <div class="modal-dialog custom-modal-dialog">
         <div class="modal-content custom-modal-content">
+          
             <div class="modal-header custom-modal-header">
                 <h5 class="modal-title" id="editModalLabel">Booking Details</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -477,5 +485,7 @@
         </div>
     </div>
 </div>
+
+
 </body>
 </html>

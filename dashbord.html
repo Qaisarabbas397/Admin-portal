@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashbord</title>
+
     <link rel="stylesheet" href="dashbord.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="setting.css.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
 </head>
 <body>
   <div class="container-fluid">
@@ -45,50 +50,103 @@
     <div class="row">
       <!-- sidebar column -->
       <div class="col-md-3 bg-light">
-        <!-- side nav -->
-        <div class="side_nav">
-          <div class="sidebar_item dashbord bg-light">
-            <a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
-           </div>
-          <div class="sidebar_item dashbord bg-light">
-          </li>
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa-solid fa-chart-line"></i>
-              Activities
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Category</a></li>
-              <li><a class="dropdown-item" href="#">Sub Category</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Activities</a></li>
-            </ul>
-          </li>
-        </div>
 
+
+        <!-- sidebar start  -->
+         <div class="side_nav">
+          <div class="sidebar_item dashbord bg-light">
+            <a href="dashbord.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+           </div>
+
+           <!-- activity dropdown -->
+           <div class="sidebar_item dashbord bg-light">
+            <a  data-bs-toggle="collapse" href="#activities_items" role="button" aria-expanded="false" aria-controls="activities_items">
+              <i class="fa-solid fa-chart-line"></i> Activities
+            </a>
+       </div>
+       <div>
+        <div class="collapse" id="activities_items">
+          <div class="sidebar_item dashbord bg-light">
+            <a href="Activities.html"> - Category</a>
+           </div>
+          <div class="sidebar_item dashbord bg-light">
+            <a href="sub category.html">- Sub Categories </a>
+           </div>
+           <div class="sidebar_item dashbord bg-light">
+              <a href="Activities.html">- Activity</a>
+             </div>
+           
+           
+        </div>
+       </div>
+
+
+        <!-- ------------menu----------------- -->
         <div class="sidebar_item dashbord bg-light">
-          <a href="#"><i class="fa-solid fa-gear"></i>  Setting</a>
+              <a  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <i class="fa fa-cog" aria-hidden="true"></i>Setting
+              </a>
          </div>
-        
+         <div>
+          <div class="collapse" id="collapseExample">
+            <div class="sidebar_item dashbord bg-light">
+              <a href="menus.html">- Menus</a>
+             </div>
+            <div class="sidebar_item dashbord bg-light">
+              <a href="Contact-Us-Details.html">- Contact US </a>
+             </div>
+             <div class="sidebar_item dashbord bg-light">
+                <a href="Find-Us-Details.html">- Find Us</a>
+               </div>
+            <div class="sidebar_item dashbord bg-light">
+              <a href="Guaidline.html"> Guidelines Ima..</a>
+             </div>
+             <div class="sidebar_item dashbord bg-light">
+              <a href="terms&condition.html"> -Terms & condition</a>
+             </div>
+             <div class="sidebar_item dashbord bg-light">
+              <a href="Privacy Image.html"> -privc image</a>
+             </div>
+            <div class="sidebar_item dashbord bg-light">
+              <a href="home-image.html">-Home Image</a>
+             </div>
+             <div class="sidebar_item dashbord bg-light">
+              <a href="About-Us-Imag.html">-About-Us Imag..</a>
+             </div>
+             <div class="sidebar_item dashbord bg-light">
+              <a href="blog-page-img.html"> -Blog Page Image</a>
+             </div>
+             <div class="sidebar_item dashbord bg-light">
+              <a href="Meta-Content.html">-Meta content</a>
+             </div>
+             
+          </div>
+         </div>
+        <!-- -----------------------------END---------------------------- -->
         <div class="sidebar_item dashbord bg-light">
-          <a href="#"><i class="fa-solid fa-blog"></i> Blogs</a>
+          <a href="blogs.html"><i class="fa-solid fa-blog"></i> Blogs</a>
          </div>
         <div class="sidebar_item dashbord bg-light">
-          <a href="#"><i class="fa-solid fa-user-plus"></i> Subscribers</a>
+          <a href="Subscribers.html"><i class="fa-solid fa-user-plus"></i> Subscribers</a>
          </div>
          <div class="sidebar_item dashbord bg-light">
-            <a href="#"><i class="fa-solid fa-calendar-check"></i> Bookings</a>
+            <a href="bookings.html"><i class="fa-solid fa-calendar-check"></i> Bookings</a>
            </div>
         <div class="sidebar_item dashbord bg-light">
-          <a href="#"><i class="fa-solid fa-ticket"></i> Coupons</a>
+          <a href="Coupons.html"><i class="fa-solid fa-ticket"></i> Coupons</a>
          </div>
         <div class="sidebar_item dashbord bg-light">
-          <a href="#"><i class="fa-solid fa-address-book"></i>  Contact</a>
+          <a href="Contact.html"><i class="fa-solid fa-address-book"></i>  Contact</a>
          </div>
          <div class="sidebar_item dashbord bg-light">
-          <a href="#"><i class="fa-solid fa-comments"></i>  Reviews</a>
+          <a href="Reviews.html"><i class="fa-solid fa-comments"></i>  Reviews</a>
          </div>
          <!-- Sidebar completed -->
          </div>
+         <!-- sidevar end -->
+
+
+
         </div>
         
       <!-- Main body -->
@@ -120,17 +178,17 @@
                 <div class="card " >
                   <div class="card-body ">
                     <div class="card_header">
-                      <h6  class="card-title">Total Users</h6>
+                      <h6  class="card-title">Total Activities</h6>
                       <img src="images/user_icon.png" width="80px" height="70px" alt="">
                     </div>
                     <h1>
-                      94
+                      25
                     </h1>
                     <div class="card_footer">
                       <div class="card-graph d-flex border">
                         <img src="images/Vector 1.png" width="20px" height="13px" alt=""><p class="" >2.0%</p>
                       </div>
-                      <p>Up from last week</p>
+                      <p>Add 2 more acti...</p>
                     </div>
                   </div>
                 </div>
@@ -141,17 +199,17 @@
                 <div class="card " >
                   <div class="card-body ">
                     <div class="card_header">
-                      <h6  class="card-title">Total Users</h6>
+                      <h6  class="card-title">Total Visitors</h6>
                       <img src="images/user_icon.png" width="80px" height="70px" alt="">
                     </div>
                     <h1>
-                      94
+                      15
                     </h1>
                     <div class="card_footer">
                       <div class="card-graph d-flex border">
                         <img src="images/Vector 1.png" width="20px" height="13px" alt=""><p class="" >2.0%</p>
                       </div>
-                      <p>Up from last week</p>
+                      <p>online</p>
                     </div>
                   </div>
                 </div>
@@ -160,17 +218,17 @@
                 <div class="card " >
                   <div class="card-body ">
                     <div class="card_header">
-                      <h6  class="card-title">Total Users</h6>
+                      <h6  class="card-title">Total Bookings</h6>
                       <img src="images/user_icon.png" width="80px" height="70px" alt="">
                     </div>
                     <h1>
-                      94
+                      113
                     </h1>
                     <div class="card_footer">
                       <div class="card-graph d-flex border">
                         <img src="images/Vector 1.png" width="20px" height="13px" alt=""><p class="" >2.0%</p>
                       </div>
-                      <p>Up from last week</p>
+                      <p>10 New Bookings</p>
                     </div>
                   </div>
                 </div>
@@ -178,7 +236,43 @@
             </div>
 
           </div>
-          <div class="col-md-6 bg-success">s
+          <div class="col-md-6">
+            <div class="container chart-container">
+              <h3 class="text-center">Booking Overview</h3>
+              <canvas id="bookingChart"></canvas>
+          </div>
+          <script>
+              const ctx = document.getElementById('bookingChart').getContext('2d');
+              const bookingChart = new Chart(ctx, {
+                  type: 'bar',
+                  data: {
+                      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                      datasets: [{
+                          label: 'Bookings',
+                          data: [50, 75, 15, 60, 40, 70, 45, 85, 20, 45, 65, 25],
+                          backgroundColor: 'rgba(255, 140, 0, 0.8)',
+                          borderRadius: 5
+                      }]
+                  },
+                  options: {
+                       responsive: true,
+                       scales: {
+                    x: {
+                        grid: {
+                            display: false // Remove X-axis grid lines
+                        }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        grid: {
+                            display: true // Enable Y-axis grid lines
+                        }
+                    }
+                }
+                  }
+              });
+          </script>
             
             </div>
             

@@ -46,36 +46,45 @@
       <div class="col-md-3 bg-light">
 
 
-        <!-- side nav -->
-        <div class="side_nav">
-            <div class="sidebar_item dashbord bg-light">
-              <a href="dashbord.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
-             </div>
-            <div class="sidebar_item dashbord bg-light">
-            </li>
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa-solid fa-chart-line"></i>
-                Activities
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Category</a></li>
-                <li><a class="dropdown-item" href="#">Sub Category</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Activities</a></li>
-              </ul>
-            </li>
-  
-          </div>
-          <!-- ------------menu----------------- -->
-        <div class="sidebar_item dashbord bg-light">
+    <!-- sidebar start  -->
+    <div class="side_nav">
+      <div class="sidebar_item dashbord bg-light">
+        <a href="dashbord.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+       </div>
+
+       <!-- activity dropdown -->
+       <div class="sidebar_item dashbord bg-light">
+        <a  data-bs-toggle="collapse" href="#activities_items" role="button" aria-expanded="false" aria-controls="activities_items">
+          <i class="fa-solid fa-chart-line"></i> Activities
+        </a>
+   </div>
+   <div>
+    <div class="collapse" id="activities_items">
+      <div class="sidebar_item dashbord bg-light">
+        <a href="Activities.html"> - Category</a>
+       </div>
+      <div class="sidebar_item dashbord bg-light">
+        <a href="sub category.html">- Sub Categories </a>
+       </div>
+       <div class="sidebar_item dashbord bg-light">
+          <a href="Activities.html">- Activity</a>
+         </div>
+       
+       
+    </div>
+   </div>
+
+
+    <!-- ------------menu----------------- -->
+    <div class="sidebar_item dashbord bg-light">
           <a  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Setting
+            <i class="fa fa-cog" aria-hidden="true"></i>Setting
           </a>
      </div>
      <div>
       <div class="collapse" id="collapseExample">
         <div class="sidebar_item dashbord bg-light">
-          <a href="menus.html"><i class="fa-solid fa-blog"></i>| Menus</a>
+          <a href="menus.html">- Menus</a>
          </div>
         <div class="sidebar_item dashbord bg-light">
           <a href="Contact-Us-Details.html">- Contact US </a>
@@ -84,25 +93,25 @@
             <a href="Find-Us-Details.html">- Find Us</a>
            </div>
         <div class="sidebar_item dashbord bg-light">
-          <a href=""> Guidelines Ima..</a>
+          <a href="Guaidline.html"> Guidelines Ima..</a>
          </div>
          <div class="sidebar_item dashbord bg-light">
-          <a href="terms&condition.html"> Terms & condition</a>
+          <a href="terms&condition.html"> -Terms & condition</a>
          </div>
          <div class="sidebar_item dashbord bg-light">
-          <a href="Privacy Image.html"> privc image</a>
+          <a href="Privacy Image.html"> -privc image</a>
          </div>
         <div class="sidebar_item dashbord bg-light">
-          <a href="home-image.html">Home Image</a>
+          <a href="home-image.html">-Home Image</a>
          </div>
          <div class="sidebar_item dashbord bg-light">
-          <a href="About-Us-Imag.html">About-Us Imag..</a>
+          <a href="About-Us-Imag.html">-About-Us Imag..</a>
          </div>
          <div class="sidebar_item dashbord bg-light">
-          <a href="blog-page-img.html"> Blog Page Image</a>
+          <a href="blog-page-img.html"> -Blog Page Image</a>
          </div>
          <div class="sidebar_item dashbord bg-light">
-          <a href="Mea-Content.html">Meta content</a>
+          <a href="Meta-Content.html">-Meta content</a>
          </div>
          
       </div>
@@ -127,7 +136,9 @@
       <a href="Reviews.html"><i class="fa-solid fa-comments"></i>  Reviews</a>
      </div>
      <!-- Sidebar completed -->
-         </div>
+     </div>
+     <!-- sidevar end -->
+
         </div>
         
       <!-- Main body -->
@@ -147,7 +158,11 @@
                     </div>
                     
                     <div class="card-body card_footer_act">
-                      <a href="#" class="btn card-link edit_btn"><i class="bi bi-pencil-square"></i>Edit</a>
+
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editModal">
+                        <i class="bi bi-pencil-square"></i> Edit
+                    </a>
+
                       <a href="#" class="btn card-link dlt_btn"><i class="fa-solid fa-trash"></i>Delete</a>
                     </div>
                     <div class="active">active</div>
@@ -191,20 +206,20 @@
                </div>
                <!-- card-4 -->
                <div class="col-md-3">
-                <div class="card act_card" >
-                    <img src="images/image (10).png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Cruise & Boat Tours</h5>
-                      <div class="col-md-12 d-flex justify-content-between">
-                      <p>Sub Categories</p> 15
+                  <div class="card act_card" >
+                      <img src="images/image (10).png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Cruise & Boat Tours</h5>
+                        <div class="col-md-12 d-flex justify-content-between">
+                        <p>Sub Categories</p> 15
+                        </div>
                       </div>
-                    </div>
                     
-                    <div class="card-body card_footer_act">
-                      <a href="#" class="btn card-link edit_btn"><i class="bi bi-pencil-square"></i>Edit</a>
-                      <a href="#" class="btn card-link dlt_btn"><i class="fa-solid fa-trash"></i>Delete</a>
-                    </div>
-                    <div class="active">active</div>
+                      <div class="card-body card_footer_act">
+                        <a href="#" class="btn card-link edit_btn" data-bs-toggle="modal" data-bs-target="#editModal"><i class="bi bi-pencil-square"></i>Edit</a>
+                        <a href="#" class="btn card-link dlt_btn"><i class="fa-solid fa-trash"></i>Delete</a>
+                      </div>
+                      <div class="active">active</div>
                   </div>
                </div>
         </div>
@@ -264,12 +279,106 @@
                            </div>
                            <!-- card-4 -->
                            <div class="col-md-3">
-                            <div class="border_card card_border_box">
-                              +
-
+                            <div class="border_card act_card_border_box">
+                              <div class="circle-border">
+                                <!-- Button to open the modal -->
+                                <div type="button" class="btn btn-plus" >
+                                  <i class="bi bi-plus"></i>
+                              </div>
                             </div>
-                           </div>
+                            </div>
+                          </div>
         </div>
+
+         <!-- modal -->
+
+         <div class="modal fade custom-modal" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+          <div class="modal-dialog custom-modal-dialog">
+              <div class="modal-content custom-modal-content">
+                  <div class="container mt-4">
+                      <div class="tour-card p-4">
+                          <div class="d-flex justify-content-between align-items-center">
+                              <h2 class="text-dark fw-bold">Abu Dhabi City Tour</h2>
+                              <div class="icons_btn">
+                                  <button class="btn btn-outline-secondary"><i class="bi bi-pencil-square"></i></button>
+                                  <button class="btn btn-outline-danger">X</button>
+                              </div>
+                          </div>
+                          <p class="text-warning fs-4">
+                              AED 100 <span class="text-muted">Price</span>
+                          </p>
+                          <div class="row tour-images mb-3">
+                              <div class="col-md-4">
+                                  <img src="image1.jpg" class="img-fluid" alt="Tour Image 1">
+                              </div>
+                              <div class="col-md-4">
+                                  <img src="image2.jpg" class="img-fluid" alt="Tour Image 2">
+                              </div>
+                              <div class="col-md-4">
+                                  <img src="image3.jpg" class="img-fluid" alt="Tour Image 3">
+                              </div>
+                          </div>
+                          <div class="status-toggle mb-3">
+                              <h5>Status On/Off</h5>
+                              <div class="form-check form-switch">
+                                  <input class="form-check-input" type="checkbox">
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <p><i class="bi bi-people text-warning"></i> Join in Group</p>
+                                  <p><i class="bi bi-check-circle text-warning"></i> Instant Confirmation</p>
+                                  <p><i class="bi bi-clock text-warning"></i> Start time 08:00 AM</p>
+                              </div>
+                              <div class="col-md-6">
+                                  <p><i class="bi bi-hourglass text-warning"></i> Duration: 4 Hours</p>
+                                  <p><i class="bi bi-building text-warning"></i> Hotel Pick Up</p>
+                                  <p><i class="bi bi-arrow-counterclockwise text-warning"></i> Free Cancellation 24 Hours Prior</p>
+                              </div>
+                          </div>
+                          <div class="description">
+                              <h1>Description</h1>
+                              <p>The Dubai City tour starts at the Palm Island...</p>
+                          </div>
+                          <div class="highlight">
+                              <h1>Highlight</h1>
+                              <p>A travel agency's highlights include personalized travel planning...</p>
+                          </div>
+                          <div class="itinerary">
+                              <h1>Itinerary</h1>
+                              <ul>
+                                  <li>Pick-up from your Hotel / Residence In Dubai</li>
+                                  <li>Drive Through Dubai Creek</li>
+                                  <li>Jumeirah Mosque</li>
+                                  <li>Jumeirah Beach</li>
+                                  <li>Photo Shoot Outside of Burj Al Arab</li>
+                              </ul>
+                          </div>
+                          <div class="included">
+                              <h1>Included/Excluded</h1>
+                              <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" checked>
+                                  <label class="form-check-label">Default checkbox</label>
+                              </div>
+                          </div>
+                          <div class="footer_heading">
+                              <div class="Q_expect">
+                                  <h2>What to Expect:</h2>
+                                  <p>Our fantastic Abu Dhabi tour packages...</p>
+                              </div>
+                              <div class="booking_confirm">
+                                  <h2>Booking Confirmation:</h2>
+                                  <p>You'll get confirmation within minutes...</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+
     </div>
   </div>
 </body>
