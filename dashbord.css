@@ -183,10 +183,10 @@
   /* ================================== */
   /* booking-page */
   .booking_view_btn a{
-      /* display: block; */
       color: #949090;
       margin-top: -22px;
   }
+  
   .body-text{
       margin-top: -10px;
   }
@@ -213,6 +213,21 @@
       font-size: 16;
       font-weight: 600;
       margin-top: -10px;
+  }
+
+  .add-booking-btn .btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+  }
+  .add-booking-btn .btn-primary {
+    background-color: #EE8E3B !important;
+    border-color: #EE8E3B;
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  .add-booking-btn .btn-primary:hover {
+    background-color: #EE8E3B;
+    border-color:#EE8E3B;
   }
   
   /* ================================== */
@@ -482,7 +497,7 @@ textarea.form-control {
 }
 
 .prev-image img {
-    width: 120px; 
+    width: 500px; 
     height: auto;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -806,7 +821,17 @@ button.Edit-Menu {
 /* ======================================================== */
 
 /* abu Dubai city tour */
-    
+.activities-edit {
+    color: white;
+  }
+  .activities-edit:hover { 
+    background-color:  #EE8E3B !important;
+    border-color:  #EE8E3B !important;
+    color: black !important;
+  }
+.d-flex h2 {
+    font-size: 28px;
+  }  
 ul{
     list-style-type: none;
 }
@@ -820,6 +845,15 @@ ul{
   .tour-images img {
     width: 100%;
     border-radius: 5px;
+  }
+  .dubai-1 img {
+     height: 70%;
+  }
+  .dubai-2 img{
+    height: 70%;
+  }
+  .dubai-3 img{
+    height: 70%;
   }
   .status-toggle {
     display: flex;
@@ -859,7 +893,7 @@ ul{
     border-radius: 50px;
 }
 .form-check-input:checked {
-    background-color: #198754 !important; /* Bootstrap success green */
+    background-color: #198754 !important; 
     border-color: #198754 !important;
     
 }
@@ -914,4 +948,15 @@ ul{
     border-radius: 50px !important;
     background-color: #f3e0e0 !important;
 }
-    
+.description h1 {
+    font-size: 24px;
+  }
+.highlight h1 {
+    font-size: 24px;
+  }  
+.itinerary h1 {
+    font-size: 24px;
+  } 
+.included h1 {
+    font-size: 24px;
+  } 

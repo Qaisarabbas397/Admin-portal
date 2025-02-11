@@ -159,7 +159,7 @@
                     
                     <div class="card-body card_footer_act">
 
-                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editModal">
+                      <a href="#" class="btn activities-edit" data-bs-toggle="modal" data-bs-target="#editModal">
                         <i class="bi bi-pencil-square"></i> Edit
                     </a>
 
@@ -301,21 +301,23 @@
                               <h2 class="text-dark fw-bold">Abu Dhabi City Tour</h2>
                               <div class="icons_btn">
                                   <button class="btn btn-outline-secondary"><i class="bi bi-pencil-square"></i></button>
-                                  <button class="btn btn-outline-danger">X</button>
+                                  <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">X</button>
+
+                                 
                               </div>
                           </div>
                           <p class="text-warning fs-4">
                               AED 100 <span class="text-muted">Price</span>
                           </p>
                           <div class="row tour-images mb-3">
-                              <div class="col-md-4">
-                                  <img src="image1.jpg" class="img-fluid" alt="Tour Image 1">
+                              <div class="col-md-4 dubai-1">
+                                  <img src="images/dubai-1.png" class="img-fluid" alt="Tour Image 1">
                               </div>
-                              <div class="col-md-4">
-                                  <img src="image2.jpg" class="img-fluid" alt="Tour Image 2">
+                              <div class="col-md-4 dubai-2">
+                                  <img src="images/dubai-2.png" class="img-fluid" alt="Tour Image 2">
                               </div>
-                              <div class="col-md-4">
-                                  <img src="image3.jpg" class="img-fluid" alt="Tour Image 3">
+                              <div class="col-md-4 dubai-3">
+                                  <img src="images/dubai-3.png" class="img-fluid" alt="Tour Image 3">
                               </div>
                           </div>
                           <div class="status-toggle mb-3">
@@ -333,7 +335,7 @@
                               <div class="col-md-6">
                                   <p><i class="bi bi-hourglass text-warning"></i> Duration: 4 Hours</p>
                                   <p><i class="bi bi-building text-warning"></i> Hotel Pick Up</p>
-                                  <p><i class="bi bi-arrow-counterclockwise text-warning"></i> Free Cancellation 24 Hours Prior</p>
+                                  <p><i class="bi bi-arrow-counterclockwise text-warning"></i> Free Cancellation 24 </p>
                               </div>
                           </div>
                           <div class="description">
@@ -343,23 +345,106 @@
                           <div class="highlight">
                               <h1>Highlight</h1>
                               <p>A travel agency's highlights include personalized travel planning...</p>
+                              <ul class="">
+                                <li>
+                                  <div class="dots"></div>
+                                  Marvel at sights like the Burj Khalifa, the Burj Al Arab & Dubai
+                                  Marin
+                                </li>
+                                <li>
+                                  <div class="dots"></div>
+                                  Get rare insights into local sights with the help of your guide
+                                </li>
+                                <li>
+                                  <div class="dots"></div>
+                                  Wander around the traditional spice and gold souk
+                                </li>
+                              </ul>
                           </div>
                           <div class="itinerary">
                               <h1>Itinerary</h1>
                               <ul>
-                                  <li>Pick-up from your Hotel / Residence In Dubai</li>
-                                  <li>Drive Through Dubai Creek</li>
-                                  <li>Jumeirah Mosque</li>
-                                  <li>Jumeirah Beach</li>
-                                  <li>Photo Shoot Outside of Burj Al Arab</li>
+                                <li>
+                                  <div class="Itinerary_dot"></div>
+                                  Pick-up from your Hotel / Residence In Dubai
+                                </li>
+                                <li>
+                                  <div class="Itinerary_dot"></div>
+                                  Drive Through Dubai Creek
+                                </li>
+                                <li>
+                                  <div class="Itinerary_dot"></div>
+                                  Jumeirah Mosque
+                                </li>
+                                <li>
+                                  <div class="Itinerary_dot"></div>
+                                  Jumeirah Breach
+                                </li>
+                                <li>
+                                  <div class="Itinerary_dot"></div>
+                                  Photo Shoot Outside of Burj Al Arab
+                                </li>
+                                <li>
+                                  <div class="Itinerary_dot"></div>
+                                  Drive Through Madinat Jumeirah Along Pictures
+                                </li>
+                                <li>
+                                  <div class="Itinerary_dot"></div>
+                                  Palm Jumeirah Island
+                                </li>
+                                <li>
+                                  <div class="Itinerary_dot"></div>
+                                  Atlantis Hotel Photo Shoot From Out Side
+                                </li>
+                                <li>
+                                  <div class="Itinerary_dot"></div>
+                                  View Of Dubai Marina
+                                </li>
+                                <li>
+                                  <div class="Itinerary_dot"></div>
+                                  Drive Through Dubai Mall & Burj Khalifa
+                                </li>
+                                <li>
+                                  <div class="Itinerary_dot"></div>
+                                  Islamic Art Gallery
+                                </li>
+                                <li>
+                                  <div class="Itinerary_dot"></div>
+                                  Drop back to your Hotel / Residence in Dubai
+                                </li>
                               </ul>
                           </div>
                           <div class="included">
-                              <h1>Included/Excluded</h1>
-                              <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" checked>
-                                  <label class="form-check-label">Default checkbox</label>
-                              </div>
+                            <h1>Included/Excluded</h1>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                                checked
+                              />
+                              <label class="form-check-label" for="flexCheckDefault">
+                                Default checkbox
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input btn-success"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                                checked
+                              />
+                              <label class="form-check-label" for="flexCheckDefault">
+                                Default checkbox
+                              </label>
+                            </div>
+                            <div class="cross_checked">
+                              <div class="cross_btn">X</div>
+                              <p>Lorem ipsum dolor sit amet consectetur. Cumque!</p>
+                            </div>
+                          </div>
                           </div>
                           <div class="footer_heading">
                               <div class="Q_expect">
@@ -370,6 +455,10 @@
                                   <h2>Booking Confirmation:</h2>
                                   <p>You'll get confirmation within minutes...</p>
                               </div>
+                              <div class="how_use">
+                                <h2>How to use: </h2>
+                                <p>The voucher is valid only on the specified date (and time if applicable).</p>
+                            </div>
                           </div>
                       </div>
                   </div>
