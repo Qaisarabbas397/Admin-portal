@@ -46,10 +46,10 @@
       <!-- sidebar column -->
       <div class="col-md-3 bg-light">
 
-       <!-- sidebar start  -->
-       <div class="side_nav">
+      <!-- sidebar start  -->
+      <div class="side_nav">
         <div class="sidebar_item dashbord bg-light">
-          <a href="dashbord.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+          <a href="dashbord.html" ><i class="fas fa-tachometer-alt"></i> Dashboard</a>
          </div>
 
          <!-- activity dropdown -->
@@ -60,14 +60,14 @@
      </div>
      <div>
       <div class="collapse" id="activities_items">
-        <div class="sidebar_item dashbord bg-light">
+        <div class="sidebar_item dashbord bg-light ps-5">
           <a href="Activities.html"> - Category</a>
          </div>
-        <div class="sidebar_item dashbord bg-light">
+        <div class="sidebar_item dashbord bg-light ps-5">
           <a href="sub category.html">- Sub Categories </a>
          </div>
-         <div class="sidebar_item dashbord bg-light">
-            <a href="Activities.html">- Activity</a>
+         <div class="sidebar_item dashbord bg-light ps-5">
+            <a href="sub_categories.html">- Activity</a>
            </div>
          
          
@@ -77,40 +77,40 @@
 
       <!-- ------------menu----------------- -->
       <div class="sidebar_item dashbord bg-light">
-            <a  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <a  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="color: #EE8E3B ;">
               <i class="fa fa-cog" aria-hidden="true"></i>Setting
             </a>
        </div>
        <div>
-        <div class="collapse" id="collapseExample">
-          <div class="sidebar_item dashbord bg-light">
-            <a href="menus.html">- Menus</a>
+        <div class="collapse " id="collapseExample">
+          <div class="sidebar_item dashbord bg-light ps-5">
+            <a href="menus.html" >- Menus</a>
            </div>
-          <div class="sidebar_item dashbord bg-light">
+          <div class="sidebar_item dashbord bg-light ps-5">
             <a href="Contact-Us-Details.html">- Contact US </a>
            </div>
-           <div class="sidebar_item dashbord bg-light">
+           <div class="sidebar_item dashbord bg-light ps-5">
               <a href="Find-Us-Details.html">- Find Us</a>
              </div>
-          <div class="sidebar_item dashbord bg-light">
+          <div class="sidebar_item dashbord bg-light ps-5">
             <a href="Guaidline.html"> Guidelines Ima..</a>
            </div>
-           <div class="sidebar_item dashbord bg-light">
+           <div class="sidebar_item dashbord bg-light ps-5">
             <a href="terms&condition.html"> -Terms & condition</a>
            </div>
-           <div class="sidebar_item dashbord bg-light">
+           <div class="sidebar_item dashbord bg-light ps-5">
             <a href="Privacy Image.html"> -privc image</a>
            </div>
-          <div class="sidebar_item dashbord bg-light">
-            <a href="home-image.html">-Home Image</a>
+          <div class="sidebar_item dashbord bg-light ps-5">
+            <a href="home-image.html" >-Home Image</a>
            </div>
-           <div class="sidebar_item dashbord bg-light">
-            <a href="About-Us-Imag.html">-About-Us Imag..</a>
+           <div class="sidebar_item dashbord bg-light ps-5">
+            <a href="About-Us-Imag.html" style="color: #EE8E3B;">-About-Us Imag..</a>
            </div>
-           <div class="sidebar_item dashbord bg-light">
+           <div class="sidebar_item dashbord bg-light ps-5">
             <a href="blog-page-img.html"> -Blog Page Image</a>
            </div>
-           <div class="sidebar_item dashbord bg-light">
+           <div class="sidebar_item dashbord bg-light ps-5">
             <a href="Meta-Content.html">-Meta content</a>
            </div>
            
@@ -153,7 +153,31 @@
                     <label for="file-upload" class="custom-file-upload">
                       <i class="fas fa-upload"></i>  Choose File </label>
                   <input type="file" id="file-upload" style="display: none;">
-                  <button class="About-Us"><i class="fa-solid fa-trash"></i> Delete</button>
+
+                           <!-- Delete Button -->
+                  <button class="About-Us" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                    <i class="fa-solid fa-trash"></i> Delete
+                     </button>
+ 
+                    <!-- Delete Confirmation Modal -->
+                    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="deleteModalLabel">Confirm Deletion</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <p>Are you sure you want to delete?</p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-danger" id="confirmDelete">Yes, Delete</button>
+                  </div>
+                </div>
+               </div>
+             </div>
+
                 </div>
                   
                 </div>
@@ -168,7 +192,30 @@
                     <i class="fas fa-upload"></i> Choose File</label>
              
                 <input type="file" id="file-upload" style="display: none;">
-                <button class="About-Us"><i class="fa-solid fa-trash"></i> Delete</button>
+                           <!-- Delete Button -->
+                           <button class="About-Us" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                            <i class="fa-solid fa-trash"></i> Delete
+                             </button>
+         
+                            <!-- Delete Confirmation Modal -->
+                            <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="deleteModalLabel">Confirm Deletion</h5>
+                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            <p>Are you sure you want to delete?</p>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                            <button type="button" class="btn btn-danger" id="confirmDelete">Yes, Delete</button>
+                          </div>
+                        </div>
+                       </div>
+                     </div>
+              
               </div>   
             </div>
          </div>

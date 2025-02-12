@@ -145,6 +145,31 @@
         </div>
         <div class="card-body card_footer_act">
             <a href="#" class="btn  btn-light card-link"><i class="bi bi-pencil-square"></i>  Edit</a>
+
+                   <!-- Delete Button -->
+                   <button class="About-Us" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                    <i class="fa-solid fa-trash"></i> Delete
+                     </button>
+ 
+                    <!-- Delete Confirmation Modal -->
+                    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="deleteModalLabel">Confirm Deletion</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <p>Are you sure you want to delete?</p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-danger" id="confirmDelete">Yes, Delete</button>
+                  </div>
+                </div>
+               </div>
+             </div>
+
             <a href="#" class="btn  btn-light card-link"><i class="fa-solid fa-trash"></i>  Dlt</a>
           </div>
           

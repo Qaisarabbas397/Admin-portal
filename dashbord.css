@@ -108,6 +108,12 @@
       font-size: 40px;
       margin-top: -10px;
   }
+  .sec_card_footer{
+    margin-top: 50px !important;
+  }
+  .cord-body-h1{
+    transform: translateY(30px) !important;
+  }
   .card-graph{
       height: 28px;
       align-items: center;
@@ -154,6 +160,14 @@
   .card_footer_act .dlt_btn{
       color: #FF4242;
       background-color: #FF42421A;
+  }
+  .coupon_border_box{
+    border-radius: 3px;
+    border: 2px dashed #ee8e3b ;
+    height: 36vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .act_card_border_box{
       border-radius: 3px;
@@ -712,14 +726,7 @@ textarea.form-control {
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-color: #fff;
-}
-
-.card.act_card.coupon_card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 .coupon-card-body {
     padding: 6px; 
@@ -731,8 +738,10 @@ textarea.form-control {
 }
 
 .card-title {
-    font-size: 14px; 
-    color: #666; 
+    font-size: 19px; 
+    font-weight: 500;
+    color: #374151; 
+    
     margin-bottom: 4px; 
 }
 
@@ -776,13 +785,14 @@ button.Edit-Menu {
 /* ============================================= */
 /* contact-page */
 .activities h5{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
 }
 .activities P{
     font-size: 14px;
     color: #9CA3AF;
 }
+
 /* ========================================================== */
 /* couspon-page */
     /* Container styling */
@@ -794,7 +804,7 @@ button.Edit-Menu {
 
 /* Button styling */
 .view-btn button {
-    margin-top: 100px;
+    
     width: 40px; /* Fixed width */
     height: 40px; /* Fixed height */
     border: 2px dashed #EE8E3B; /* Remove default border */
@@ -821,13 +831,27 @@ button.Edit-Menu {
 /* ======================================================== */
 
 /* abu Dubai city tour */
+
+.menus-footer{
+    display: flex;
+    justify-content: space-around;
+}
 .activities-edit {
     color: white;
+    padding-right: 3px;
   }
   .activities-edit:hover { 
-    background-color:  #EE8E3B !important;
-    border-color:  #EE8E3B !important;
-    color: black !important;
+    background-color:  #e4e4e4 !important;
+    border-color:  #bebdbd !important;
+    /* color: black !important; */
+    font-weight: 600;
+    transition-duration: 0.7s;
+  }
+  .activities-edit:focus{
+    background-color:  #e4e4e4 !important;
+    border-color:  #bebdbd !important;
+    font-weight: 600;
+
   }
 .d-flex h2 {
     font-size: 28px;
@@ -960,3 +984,129 @@ ul{
 .included h1 {
     font-size: 24px;
   } 
+
+.email{
+    border-bottom: 1px #e7e7e7 solid;
+    margin-bottom: 4px;
+}
+/* ========================================= */
+ /* .sub-category */
+.justify-content-between {
+    color: #EE8E3B;
+    font-weight: 600;
+}
+.justify-content-between span {
+    color:  #EE8E3B;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+/* ========================================================== */
+/* Blog-view-page */
+.modal-content {
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.modal-header .btn-outline-secondary {
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 165px !important;
+}
+
+.modal-header .btn-outline-secondary:hover {
+    background: #6c757d;
+    color: #fff;
+}
+
+.modal-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+.btn-close {
+    background-color: transparent;
+    border: none;
+    opacity: 1;
+    font-size: 18px;
+}
+.img-view {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.img-view h1 {
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+}
+
+.image {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.image img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.text {
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.text h1 {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+.text-line {
+    padding: 10px 15px;
+}
+
+.text-line h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #081E2A;
+}
+
+.text-line p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.modal-footer {
+    justify-content: center;
+    padding: 10px;
+}
+.modal-footer .btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.btn-outline-secondary,
+.btn-danger {
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin: 5px;
+}
+.btn-outline-secondary:hover {
+    background: #6c757d;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background: #dc3545;
+    color: #fff;
+}
+
+
